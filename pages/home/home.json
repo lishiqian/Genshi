@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "t-item":"/components/t-items/t-item/t-item",
+    "t-item-list":"/components/t-items/t-item-list/t-item-list"
+  },
+  "navigationBarTitleText": "武器列表"
+}

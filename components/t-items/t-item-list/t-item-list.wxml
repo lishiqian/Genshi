@@ -1,0 +1,4 @@
+<!--components/t-items/t-item-list/t-item-list.wxml-->
+<view class="item-list">
+  <slot></slot>
+</view>

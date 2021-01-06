@@ -1,0 +1,13 @@
+/* components/t-items/t-item/t-item.wxss */
+.item{
+  text-align: center;
+  background-color: #E0DDD4;
+  margin-top: 20rpx;
+  border: 1px solid #ccc;
+  border-radius: 22rpx;
+}
+
+.item-img {
+  width: 200rpx;
+  height:200rpx;
+}

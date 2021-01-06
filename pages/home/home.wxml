@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<t-item-list>
+  <block wx:for="{{weapon_list}}" wx:key="index">
+    <t-item title="{{item.name}}" 
+            img="{{item.imgUrl}}" />
+  </block>
+</t-item-list> 

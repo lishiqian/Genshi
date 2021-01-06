@@ -1,0 +1,6 @@
+/* components/t-items/t-item-list/t-item-list.wxss */
+.item-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
