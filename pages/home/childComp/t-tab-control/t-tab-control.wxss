@@ -1,0 +1,49 @@
+/* pages/home/childComp/t-tab-control/t-tab-control.wxss */
+.tab-control-box {
+  /* height: 2000rpx; */
+  width: 60%;
+  background-color:rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.2s;
+}
+
+.show-control{
+  /* translate: 100%; */
+  transform: translateX(100%);
+}
+
+.tab-control-content{
+  position: relative;
+}
+
+.show-control-btn{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: -80rpx;
+  top: 100rpx;
+  background-color: rgba(255, 255, 255, 0.9); 
+  text-align: center;
+  line-height: 80rpx;
+  padding-top: 20rpx;
+  border-radius: 5rpx;
+  z-index: 9;
+}
+
+.show-control-btn>image{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+
+.curtain{
+  /* background-color: red; */
+  width: 40%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}

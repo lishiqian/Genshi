@@ -1,4 +1,5 @@
 <!--pages/home/home.wxml-->
+<t-tab-control></t-tab-control>
 <t-item-list>
   <block wx:for="{{weapon_list}}" wx:key="index">
     <t-item title="{{item.name}}" 

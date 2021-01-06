@@ -1,0 +1,13 @@
+<!--pages/home/childComp/t-tab-control/t-tab-control.wxml-->
+<view class="curtain" 
+      hidden="{{!isShow}}" 
+      bind:tap="handShowBtnClick" />
+<view class="tab-control-box {{isShow? '':'show-control'}}">
+  <view class="tab-control-content">
+    <view class="show-control-btn"
+          bind:tap="handShowBtnClick">
+      <image src="/assets/tabcontrol/目录.png" mode="widthFix"></image>    
+    </view>
+    <view>哈哈哈哈</view>
+  </view>
+</view>
