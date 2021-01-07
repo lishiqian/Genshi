@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
-<t-tab-control></t-tab-control>
+<t-tab-control bind:selectChange="handleSelectChange"></t-tab-control>
 <t-item-list>
-  <block wx:for="{{weapon_list}}" wx:key="index">
+  <block wx:for="{{show_weapon_data}}" wx:key="index">
     <t-item title="{{item.name}}" 
             img="{{item.imgUrl}}" />
   </block>

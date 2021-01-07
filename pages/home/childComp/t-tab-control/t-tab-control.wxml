@@ -1,13 +1,40 @@
 <!--pages/home/childComp/t-tab-control/t-tab-control.wxml-->
-<view class="curtain" 
-      hidden="{{!isShow}}" 
-      bind:tap="handShowBtnClick" />
+<view class="curtain" hidden="{{!isShow}}" bind:tap="handShowBtnClick" />
 <view class="tab-control-box {{isShow? '':'show-control'}}">
   <view class="tab-control-content">
-    <view class="show-control-btn"
-          bind:tap="handShowBtnClick">
-      <image src="/assets/tabcontrol/目录.png" mode="widthFix"></image>    
+    <!-- 显示隐藏按钮 -->
+    <view class="show-control-btn" bind:tap="handShowBtnClick">
+      <image src="/assets/tabcontrol/目录.png" mode="widthFix"></image>
     </view>
-    <view>哈哈哈哈</view>
+    <view>
+      <!-- 武器类型 -->
+      <view class="title">
+        <image src="/assets/tabcontrol/cc-select.png" mode="widthFix"></image>
+        <text>{{weapon_type.title}}</text>
+      </view>
+      <block wx:for="{{weapon_type.list}}" wx:key="index">
+        <view class="item {{index==select.typeIndex ? 'item-active':''}}" 
+              bind:tap="handItemClick"
+              data-index="{{index}}"
+              data-type="type">
+          {{item.text}}
+        </view>
+      </block>
+
+
+      <!-- 武器品质 -->
+      <view class="title">
+        <image src="/assets/tabcontrol/cc-select.png" mode="widthFix"></image>
+        <text>{{weapon_qulity.title}}</text>
+      </view>
+      <block wx:for="{{weapon_qulity.list}}" wx:key="index">
+        <view class="item {{index==select.qulityIndex ? 'item-active':''}}" 
+              bind:tap="handItemClick"
+              data-index="{{index}}"
+              data-type="qulity">
+          {{item.text}}
+        </view>
+      </block>
+    </view>
   </view>
 </view>

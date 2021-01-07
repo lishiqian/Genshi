@@ -5,6 +5,7 @@
   margin-top: 20rpx;
   border: 1px solid #ccc;
   border-radius: 22rpx;
+  margin-left: 35rpx;
 }
 
 .item-img {

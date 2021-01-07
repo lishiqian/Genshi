@@ -1,31 +1,32 @@
 /* pages/home/childComp/t-tab-control/t-tab-control.wxss */
 .tab-control-box {
   /* height: 2000rpx; */
-  width: 60%;
-  background-color:rgba(255, 255, 255, 1);
+  width: 50%;
+  background-color: rgba(255, 255, 255, 1);
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   transition: transform 0.2s;
+  z-index: 9;
 }
 
-.show-control{
+.show-control {
   /* translate: 100%; */
   transform: translateX(100%);
 }
 
-.tab-control-content{
+.tab-control-content {
   position: relative;
 }
 
-.show-control-btn{
+.show-control-btn {
   width: 80rpx;
   height: 80rpx;
   position: absolute;
   left: -80rpx;
   top: 100rpx;
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   line-height: 80rpx;
   padding-top: 20rpx;
@@ -33,17 +34,42 @@
   z-index: 9;
 }
 
-.show-control-btn>image{
+.show-control-btn>image {
   width: 60rpx;
   height: 60rpx;
 }
 
 
-.curtain{
+.curtain {
   /* background-color: red; */
-  width: 40%;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.title {
+  width: 100%;
+  background-color: #ccc;
+  font-size: 40rpx;
+  padding: 10rpx 0 10rpx 12rpx;
+}
+
+.title>image {
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+  position: relative;
+  top: 10rpx;
+}
+
+.item {
+  font-size: 32rpx;
+  padding: 8rpx 0 8rpx 40rpx;
+}
+
+.item-active {
+  background-color: #ddd;
 }
